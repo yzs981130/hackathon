@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button x:Name="Record1" Content="Record" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,162,0,0" Height="69" Width="145" Click="Record1_Click" />
+        <Button x:Name="Record2" Content="Record" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,282,0,0" Height="69" Width="145" Click="Record2_Click"/>
+        <Button x:Name="Stop1" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="354,162,0,0" Height="69" Width="145" Click="Stop1_Click" />
+        <Button x:Name="Stop2" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="354,282,0,0" Height="69" Width="145" Click="Stop2_Click"/>
+        <Button x:Name="Play1" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="597,162,0,0" Height="69" Width="145" Click="Play1_Click" />
+        <Button x:Name="Play2" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="597,282,0,0" Height="69" Width="145" Click="Play2_Click"/>
+        <Button x:Name="Verify1" Content="Verify" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1046,162,0,0" Height="69" Width="145" />
+        <Button x:Name="Verify2" Content="Verify" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1046,282,0,0" Height="69" Width="145" />
     </Grid>
 </Page>
