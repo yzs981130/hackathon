@@ -141,19 +141,19 @@ namespace hackathon
 
     public sealed partial class MainPage : Page
     {
-        private readonly Recorder r1, r2;
+        private readonly Recorder r1, r2, r3;
         public MainPage()
         {
             this.InitializeComponent();
             r1 = new Recorder("audio1.wav");
             r2 = new Recorder("audio2.wav");
+            r3 = new Recorder("text.wav");
         }
 
         private void Record1_Click(object sender, RoutedEventArgs e)
         {
             r1.recordBtn_Click(sender, e);
         }
-
         
         private void Stop1_Click(object sender, RoutedEventArgs e)
         {
@@ -169,8 +169,7 @@ namespace hackathon
         {
             r2.recordBtn_Click(sender, e);
         }
-
-
+        
         private void Stop2_Click(object sender, RoutedEventArgs e)
         {
             r2.stopBtn_Click(sender, e);
@@ -180,6 +179,62 @@ namespace hackathon
         {
             r2.playBtn_Click(sender, e, Dispatcher);
         }
+        
+        private void Verify1_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
 
+        private void Verify2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Record3_Click(object sender, RoutedEventArgs e)
+        {
+            r3.recordBtn_Click(sender, e);
+        }
+
+        private void Stop3_Click(object sender, RoutedEventArgs e)
+        {
+            r3.stopBtn_Click(sender, e);
+        }
+
+        private void Play3_Click(object sender, RoutedEventArgs e)
+        {
+            r3.playBtn_Click(sender, e, Dispatcher);
+        }
+
+
+
+        private async void Select_Click(object sender, RoutedEventArgs e)
+        {
+            var picker = new Windows.Storage.Pickers.FileOpenPicker
+            {
+                ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail,
+                SuggestedStartLocation =
+                Windows.Storage.Pickers.PickerLocationId.MusicLibrary
+            };
+            picker.FileTypeFilter.Add(".wav");
+            StorageFile file = await picker.PickSingleFileAsync();
+            if (file != null)
+            {
+                this.textBox.Text = "Picked photo: " + file.Name;
+            }
+            else
+            {
+                this.textBox.Text = "Nothing selected";
+            }
+        }
+
+        private void Refresh1_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Refresh2_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
