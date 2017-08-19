@@ -18,7 +18,7 @@
         <Button x:Name="Verify2" Content="Verify" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="660,218,0,0" Height="69" Width="145" Click="Verify2_Click"/>
         <Button x:Name="Select" Content="Select files" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="236,396,0,0" Height="49" Width="226" Click="Select_Click"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="548,396,0,0" Height="49" Width="293" IsReadOnly="True"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="947,454,0,0" Height="106" Width="134"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="947,454,0,0" Height="106" Width="134" Click="SubmitButton_Click"/>
         <Button x:Name="Record3" Content="Record" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="177,491,0,0" Height="69" Width="145" Click="Record3_Click"/>
         <Button x:Name="Stop3" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="429,491,0,0" Height="69" Width="145" Click="Stop3_Click"/>
         <Button x:Name="Play3" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="672,491,0,0" Height="69" Width="145" Click="Play3_Click"/>
